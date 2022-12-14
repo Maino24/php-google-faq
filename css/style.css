@@ -11,15 +11,26 @@ body{
 
 header{
     border-bottom: 1px solid grey;
+    height: 15vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .containerNav{
-    
-    height: 10vh;
-    
+    display: flex;
+    padding-top: 20px;
 }
 
-.containerDR{
+li{
+    list-style: none;
+    padding-right: 10px;
+}
+
+main{
     width: 60%;
     margin: auto;
+    height: 90vh;
+    padding: 20px 0;
 }

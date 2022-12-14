@@ -79,23 +79,17 @@ $navbar = [
 <body>
     
     <header>
-        <div>
-
+        <div class="containerHeaderTop">
+            <h1>Google</h1>
         </div>
         <div class="containerNav">
-            <ul>
-
-                <li class="nomi">
-                <?php for($i=0; $i < count($navbar); $i++){
-                   
-                   echo $navbar[$i];
-                   
-               }; ?>
-               </li>
-
-            </ul>
-                
             
+            <?php for($i=0; $i < count($navbar); $i++){
+                
+                echo "<li>".$navbar[$i]."</li>";
+                
+            }; ?>
+                
         </div>
 
 
@@ -115,9 +109,15 @@ $navbar = [
                 */
 
                 foreach ($array as $numeroDomanda){
-                    echo $numeroDomanda['domanda'];
+                    echo "<h2>".$numeroDomanda['domanda']."</h2>";
                     echo "<br>";
                     echo $numeroDomanda['risposta'];
+                    echo "<br>";
+                    echo "<br>";
+                    echo "<h4>".$numeroDomanda['sottotitolo']."</h4>";
+                    echo "<br>";
+                    echo $numeroDomanda['sottoRisposta'];
+                    echo "<br>";
                     echo "<br>";
                 };
 
